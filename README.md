@@ -14,7 +14,38 @@ The process is simple
     * `Password`: `sessionid` returned by login (inside login body JSON)
     * base64(Username:Password)
     * See servers.php for a demo
-    
+
+# Example return JSON from login
+```
+{
+	"data": {
+		"clientid": "cid_4x9u9xjjxix",
+		"email": "someone@gmail.com",
+		"prefs": {
+			"notifications": {
+				"active": true
+			}
+		},
+		"postalcode": "OX16 1AA",
+		"address": "25 High Street",
+		"plan": 1,
+		"state": "Oxfordshire",
+		"refcode": "9b4xx11ee770",
+		"phone": "",
+		"paid": true,
+		"id": "RAMP9J2MPM2",
+		"company": "AMAZ",
+		"mfa_enabled": false,
+		"country": "GB",
+		"mfa_phone": null,
+		"name": "SOME NAME",
+		"confirmed": true,
+		"trialend": 1471768837,
+		"sessionid": "THIS_IS_THE_SESSION_ID_FOR_SERVERS_ENDPOINT_CALL_YOU_NEED",
+		"city": "BANBURY"
+	}
+}
+```
 
 # Example return JSON from servers endpoint
 ```
